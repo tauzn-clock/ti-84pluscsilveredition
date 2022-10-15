@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>List file for zztemp.asm (15/10/2022 10:48:29 pm)</title>
+</head>
+<body>
+<style>
+h1, h2, h3, h4, p { font-family: trebuchet ms, verdana, tahoma, sans serif; text-align: center; }
+#asmout, #ascii { border-collapse: collapse; border: 1px solid black; margin-left: auto; margin-right: auto; }
+#asmout td, #asmout th, #ascii td, #ascii th { vertical-align: top; padding: 3px; margin: 0px; border-left: 1px solid #333333; border-right: 1px solid #333333; font-family: consolas, lucida console, courier new, monospace; font-size: 10pt; }
+*.r0 { background-color: #DDDDDD; }
+*.r1 { background-color: #CCCCCC; }
+#asmout td.f { background-color: #9999FF; text-align: center; border: 1px solid #333333; }
+#asmout td.p { background-color: #99FF99; text-align: center; border: 1px solid #333333; }
+#asmout td.j { background-color: #FF9999; text-align: center; border: 1px solid #333333; }
+#asmout td.l { background-color: #CCCCFF; text-align: center; border: 1px solid #333333; }
+#asmout td.c { text-align: center; }
+#asmout th, #ascii th { font-weight: bold; text-align: center; background-color: black; color: white;}
+#ascii td { text-align: center; width: 24px; } #unused { color: #999999; }
+</style>
+<h1>General Information</h1>
+<table id="asmout">
+<th>Field</th><th>Value</th>
+<tr class="r0"><td>Brass Version</td><td>1.0.4.11</td></tr>
+<tr class="r1"><td>Source File</td><td>C:\Users\test9\Documents\texas_instrument\dcse_sdk\asm\tasm\zztemp.asm</td></tr>
+<tr class="r0"><td>Total Source Files</td><td>4</td></tr>
+<tr class="r1"><td>Page Count</td><td>1</td></tr>
+</table>
+<h1>Output</h1>
+<table id="asmout">
+<tr><th>Address</th><th>Output</th><th>Source</th></tr>
+<tr><td class="f" colspan="4">C:\Users\test9\Documents\texas_instrument\dcse_sdk\asm\source\read_key.asm</td></tr>
+<tr><td class="p" colspan="4">Page 0</td></tr>
+<tr class="r0"><td class="c">A609</td><td>EF</td><td>.db tExtTok,tAsm84CCmp</td></tr>
+<tr class="r1"><td class="c">A60A</td><td>69</td><td>.db tExtTok,tAsm84CCmp</td></tr>
+<tr class="r0"><td class="c">A60B</td><td>CD&nbsp;2A&nbsp;40</td><td>call ClearLCDFull</td></tr>
+<tr class="r1"><td class="c">A60E</td><td>21&nbsp;00&nbsp;00</td><td>LD  HL, 0&#9;&#9;&#9;</td></tr>
+<tr class="r0"><td class="c">A611</td><td>22&nbsp;82&nbsp;87</td><td>LD     (PenCol), HL</td></tr>
+<tr class="r1"><td class="c">A614</td><td>18&nbsp;00</td><td>JR Get_NewKey</td></tr>
+<tr><td class="l" colspan="4">Get_NewKey</td></tr>
+<tr class="r0"><td class="c">A616</td><td>EF&nbsp;5D&nbsp;49</td><td>rst 28h\ .dw _GetKey</td></tr>
+<tr class="r1"><td class="c">A619</td><td>FE&nbsp;09</td><td>CP 9</td></tr>
+<tr class="r0"><td class="c">A61B</td><td>28&nbsp;0B</td><td>JR Z, exit</td></tr>
+<tr class="r1"><td class="c">A61D</td><td>26&nbsp;00</td><td>LD     H, 0</td></tr>
+<tr class="r0"><td class="c">A61F</td><td>6F</td><td>LD&#9;   L,A</td></tr>
+<tr class="r1"><td class="c">A620</td><td>EF&nbsp;FE&nbsp;44</td><td>rst 28h\ .dw _DispHL</td></tr>
+<tr class="r0"><td class="c">A623</td><td>EF&nbsp;25&nbsp;45</td><td>rst 28h\ .dw _NewLine</td></tr>
+<tr class="r1"><td class="c">A626</td><td>18&nbsp;EE</td><td>JR Get_NewKey</td></tr>
+<tr><td class="l" colspan="4">exit</td></tr>
+<tr class="r0"><td class="c">A628</td><td>C9</td><td>&#9;RET</td></tr>
+</table>
+</body></html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>List file for zztemp.asm (15/10/2022 10:48:47 pm)</title>
+</head>
+<body>
+<style>
+h1, h2, h3, h4, p { font-family: trebuchet ms, verdana, tahoma, sans serif; text-align: center; }
+#asmout, #ascii { border-collapse: collapse; border: 1px solid black; margin-left: auto; margin-right: auto; }
+#asmout td, #asmout th, #ascii td, #ascii th { vertical-align: top; padding: 3px; margin: 0px; border-left: 1px solid #333333; border-right: 1px solid #333333; font-family: consolas, lucida console, courier new, monospace; font-size: 10pt; }
+*.r0 { background-color: #DDDDDD; }
+*.r1 { background-color: #CCCCCC; }
+#asmout td.f { background-color: #9999FF; text-align: center; border: 1px solid #333333; }
+#asmout td.p { background-color: #99FF99; text-align: center; border: 1px solid #333333; }
+#asmout td.j { background-color: #FF9999; text-align: center; border: 1px solid #333333; }
+#asmout td.l { background-color: #CCCCFF; text-align: center; border: 1px solid #333333; }
+#asmout td.c { text-align: center; }
+#asmout th, #ascii th { font-weight: bold; text-align: center; background-color: black; color: white;}
+#ascii td { text-align: center; width: 24px; } #unused { color: #999999; }
+</style>
+<h1>General Information</h1>
+<table id="asmout">
+<th>Field</th><th>Value</th>
+<tr class="r0"><td>Brass Version</td><td>1.0.4.11</td></tr>
+<tr class="r1"><td>Source File</td><td>C:\Users\test9\Documents\texas_instrument\dcse_sdk\asm\tasm\zztemp.asm</td></tr>
+<tr class="r0"><td>Total Source Files</td><td>4</td></tr>
+<tr class="r1"><td>Page Count</td><td>1</td></tr>
+</table>
+<h1>Output</h1>
+<table id="asmout">
+<tr><th>Address</th><th>Output</th><th>Source</th></tr>
+<tr><td class="f" colspan="4">C:\Users\test9\Documents\texas_instrument\dcse_sdk\asm\source\move_char.asm</td></tr>
+<tr><td class="p" colspan="4">Page 0</td></tr>
+<tr class="r0"><td class="c">A609</td><td>EF</td><td>.db tExtTok,tAsm84CCmp</td></tr>
+<tr class="r1"><td class="c">A60A</td><td>69</td><td>.db tExtTok,tAsm84CCmp</td></tr>
+<tr class="r0"><td class="c">A60B</td><td>CD&nbsp;2A&nbsp;40</td><td>&#9;call ClearLCDFull</td></tr>
+<tr class="r1"><td class="c">A60E</td><td>3E&nbsp;00</td><td>&#9;LD     A, 0</td></tr>
+<tr class="r0"><td class="c">A610</td><td>32&nbsp;59&nbsp;84</td><td>LD     (CurRow), A</td></tr>
+<tr class="r1"><td class="c">A613</td><td>3E&nbsp;00</td><td>LD     A, 0</td></tr>
+<tr class="r0"><td class="c">A615</td><td>32&nbsp;5A&nbsp;84</td><td>LD     (CurCol), A</td></tr>
+<tr class="r1"><td class="c">A618</td><td>3E&nbsp;49</td><td>LD     A, 'I'</td></tr>
+<tr class="r0"><td class="c">A61A</td><td>EF&nbsp;FB&nbsp;44</td><td>&#9; rst 28h\ .dw _PutC</td></tr>
+<tr class="r1"><td class="c">A61D</td><td>18&nbsp;00</td><td>&#9;JR main</td></tr>
+<tr><td class="l" colspan="4">main</td></tr>
+<tr class="r0"><td class="c">A61F</td><td>EF&nbsp;5D&nbsp;49</td><td>&#9;&#9; rst 28h\ .dw _GetKey&#9;&#9;</td></tr>
+<tr class="r1"><td class="c">A622</td><td>FE&nbsp;09</td><td>&#9;&#9;CP 9&#9;&#9;</td></tr>
+<tr class="r0"><td class="c">A624</td><td>28&nbsp;47</td><td>&#9;&#9;JR Z, exit</td></tr>
+<tr class="r1"><td class="c">A626</td><td>FE&nbsp;01</td><td>&#9;&#9;CP 1</td></tr>
+<tr class="r0"><td class="c">A628</td><td>28&nbsp;0E</td><td>&#9;&#9;JR Z, right</td></tr>
+<tr class="r1"><td class="c">A62A</td><td>FE&nbsp;02</td><td>&#9;&#9;CP 2</td></tr>
+<tr class="r0"><td class="c">A62C</td><td>28&nbsp;13</td><td>&#9;&#9;JR Z, left</td></tr>
+<tr class="r1"><td class="c">A62E</td><td>FE&nbsp;03</td><td>&#9;&#9;CP 3</td></tr>
+<tr class="r0"><td class="c">A630</td><td>28&nbsp;18</td><td>&#9;&#9;JR Z, up</td></tr>
+<tr class="r1"><td class="c">A632</td><td>FE&nbsp;04</td><td>&#9;&#9;CP 4</td></tr>
+<tr class="r0"><td class="c">A634</td><td>28&nbsp;1D</td><td>&#9;&#9;JR Z, down</td></tr>
+<tr class="r1"><td class="c">A636</td><td>18&nbsp;E7</td><td>&#9;&#9;JR main</td></tr>
+<tr><td class="l" colspan="4">right</td></tr>
+<tr class="r0"><td class="c">A638</td><td>3A&nbsp;5A&nbsp;84</td><td>&#9;&#9;LD A, (CurCol)</td></tr>
+<tr class="r1"><td class="c">A63B</td><td>3C</td><td>&#9;&#9;INC A</td></tr>
+<tr class="r0"><td class="c">A63C</td><td>32&nbsp;5A&nbsp;84</td><td>&#9;&#9;LD (CurCol),A</td></tr>
+<tr class="r1"><td class="c">A63F</td><td>18&nbsp;1B</td><td>&#9;&#9;JR write</td></tr>
+<tr><td class="l" colspan="4">left</td></tr>
+<tr class="r0"><td class="c">A641</td><td>3A&nbsp;5A&nbsp;84</td><td>&#9;&#9;LD A, (CurCol)</td></tr>
+<tr class="r1"><td class="c">A644</td><td>3D</td><td>&#9;&#9;DEC A</td></tr>
+<tr class="r0"><td class="c">A645</td><td>32&nbsp;5A&nbsp;84</td><td>&#9;&#9;LD (CurCol),A</td></tr>
+<tr class="r1"><td class="c">A648</td><td>18&nbsp;12</td><td>&#9;&#9;JR write</td></tr>
+<tr><td class="l" colspan="4">up</td></tr>
+<tr class="r0"><td class="c">A64A</td><td>3A&nbsp;59&nbsp;84</td><td>&#9;&#9;LD A, (CurRow)</td></tr>
+<tr class="r1"><td class="c">A64D</td><td>3D</td><td>&#9;&#9;DEC A</td></tr>
+<tr class="r0"><td class="c">A64E</td><td>32&nbsp;59&nbsp;84</td><td>&#9;&#9;LD (CurRow),A</td></tr>
+<tr class="r1"><td class="c">A651</td><td>18&nbsp;09</td><td>&#9;&#9;JR write</td></tr>
+<tr><td class="l" colspan="4">down</td></tr>
+<tr class="r0"><td class="c">A653</td><td>3A&nbsp;59&nbsp;84</td><td>&#9;&#9;LD A, (CurRow)</td></tr>
+<tr class="r1"><td class="c">A656</td><td>3C</td><td>&#9;&#9;INC A</td></tr>
+<tr class="r0"><td class="c">A657</td><td>32&nbsp;59&nbsp;84</td><td>&#9;&#9;LD (CurRow),A</td></tr>
+<tr class="r1"><td class="c">A65A</td><td>18&nbsp;00</td><td>&#9;&#9;JR write</td></tr>
+<tr><td class="l" colspan="4">write</td></tr>
+<tr class="r0"><td class="c">A65C</td><td>CD&nbsp;2A&nbsp;40</td><td>&#9;&#9;call ClearLCDFull</td></tr>
+<tr class="r1"><td class="c">A65F</td><td>3E&nbsp;49</td><td>&#9;&#9;LD     A, 'I'</td></tr>
+<tr class="r0"><td class="c">A661</td><td>EF&nbsp;FB&nbsp;44</td><td>&#9;&#9; rst 28h\ .dw _PutC</td></tr>
+<tr class="r1"><td class="c">A664</td><td>3A&nbsp;5A&nbsp;84</td><td>&#9;&#9;LD A, (CurCol)</td></tr>
+<tr class="r0"><td class="c">A667</td><td>3D</td><td>&#9;&#9;DEC A</td></tr>
+<tr class="r1"><td class="c">A668</td><td>32&nbsp;5A&nbsp;84</td><td>&#9;&#9;LD (CurCol),A</td></tr>
+<tr class="r0"><td class="c">A66B</td><td>18&nbsp;B2</td><td>&#9;&#9;JR main</td></tr>
+<tr><td class="l" colspan="4">exit</td></tr>
+<tr class="r1"><td class="c">A66D</td><td>C9</td><td>&#9;&#9;RET</td></tr>
+</table>
+</body></html>
