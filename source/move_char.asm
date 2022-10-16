@@ -15,6 +15,9 @@
     LD     (CurCol), A    
     LD     A, 'I'
 	b_call(_PutC)
+	LD A, (CurCol)
+	DEC A
+	LD (CurCol),A
     
 
 	JR main
